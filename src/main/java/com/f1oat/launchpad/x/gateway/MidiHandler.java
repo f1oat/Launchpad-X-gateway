@@ -160,6 +160,10 @@ public class MidiHandler {
         @Override
         public void send(MidiMessage msg, long timeStamp) {
             byte[] data = msg.getMessage();
+            // If msg is a FastShortMessage, it will only have 2 bytes of data.
+            if (data.length < 3) {
+                return;
+            }
             System.out.printf("%02X %02X %02X\n", data[0], data[1], data[2]);
 
             int command = data[0] & 0xF0;

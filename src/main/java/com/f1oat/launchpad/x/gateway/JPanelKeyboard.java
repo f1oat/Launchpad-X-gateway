@@ -30,7 +30,7 @@ import javax.swing.JButton;
  *
  * @author f1oat
  */
-public class jPanelKeyboard extends javax.swing.JPanel {
+public class JPanelKeyboard extends javax.swing.JPanel {
 
     final private JButton[][] pads = new JButton[9][9]; //Declared much earlier in the program, right after the class declaration.
     final private float lighting = 0.15f;
@@ -39,7 +39,7 @@ public class jPanelKeyboard extends javax.swing.JPanel {
     /**
      * Creates new form Keyboard
      */
-    public jPanelKeyboard() {
+    public JPanelKeyboard() {
         //super.setSize(400, 400);
         super.setLayout(new GridLayout(9, 9));
         super.setBackground(Color.DARK_GRAY);
@@ -69,7 +69,7 @@ public class jPanelKeyboard extends javax.swing.JPanel {
                 }
 
                 final int index = 11 + 10 * (8 - r) + c;
-                final jPanelKeyboard panel = this;
+                final JPanelKeyboard panel = this;
 
                 MouseListener mouseListener = new MouseAdapter() {
                     public void mousePressed(MouseEvent e) {
