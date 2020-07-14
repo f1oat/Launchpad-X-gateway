@@ -1,4 +1,4 @@
-# Lauchpad-X gateway for FL-Studio
+# Launchpad-X gateway for FL-Studio
 
 Currently, the last Launchpad-X is not yet supported by FL-Studio 20.
 
