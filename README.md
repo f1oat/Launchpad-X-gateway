@@ -27,7 +27,7 @@ Then you need to install and run the Java application: [http://blog.f1oat.org/la
 
 Configure it as below:
 
-    ![](images/image-1.png)
+   ![](images/image-1.png)
 
 If you have used the exact recommended names for loopMidi configuration, the Java application should select automatically the right ports. Otherwise, you will need to do it by hand by using the drop down menus, and click "Apply".
 
@@ -55,7 +55,7 @@ When everything is configured, you can load a performance mode song.
 You should see pads getting several colors according to the Playlist.  
 Also, you should see the same colors on the Java application:
 
-    ![](images/image-4.png)
+   ![](images/image-4.png)
 
 You can now play with your Launchpad-X. The behavior will be the same as for MK2. See description here: [https://forum.image-line.com/viewtopic.php?t=147179](https://forum.image-line.com/viewtopic.php?t=147179)
 
