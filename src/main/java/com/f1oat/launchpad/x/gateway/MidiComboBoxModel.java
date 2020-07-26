@@ -28,13 +28,15 @@ import javax.swing.ComboBoxModel;
  *
  * @author f1oat
  */
-public class midiComboBoxModel extends AbstractListModel implements ComboBoxModel {
+public class MidiComboBoxModel extends AbstractListModel implements ComboBoxModel {
 
+    boolean isOutput;
     List<MidiDevice.Info> ports = null;
     MidiDevice.Info selection = null;
     
-    public midiComboBoxModel(boolean isOutput) {
+    public MidiComboBoxModel(boolean isOutput) {
         ports = listMidiPorts(isOutput);
+        this.isOutput = isOutput;
     }
     
     public List<MidiDevice.Info> listMidiPorts(boolean output) {
@@ -52,6 +54,19 @@ public class midiComboBoxModel extends AbstractListModel implements ComboBoxMode
         }
 
         return list;
+    }
+
+    public void refreshMidiPorts() {
+        int oldSize = ports.size();
+        this.ports = listMidiPorts(isOutput);
+        int newSize = ports.size();
+        int minSize = Math.min(oldSize, newSize);
+        fireContentsChanged(this, 0, minSize);
+        if (newSize > oldSize) {
+            fireIntervalAdded(this, oldSize, newSize);
+        } else if (oldSize > newSize) {
+            fireIntervalRemoved(this, newSize, oldSize);
+        }
     }
         
     @Override

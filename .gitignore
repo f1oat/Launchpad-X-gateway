@@ -1,2 +1,15 @@
 /nbactions.xml
 /pom.xml
+
+# Ignore IDE files
+*.iml
+.idea/
+
+# Ignore Gradle wrapper and Gradle cache directory
+.gradle
+gradle/
+gradlew
+gradlew.bat
+
+# Ignore Gradle build output directory
+build

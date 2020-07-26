@@ -44,7 +44,7 @@ Then, launch FL-Studio. You have to make the connection to the loopMidi virtual 
     - LPX\_to\_FL (Native) / MIDI hardware port / port 18 (or any value different from 20 and 3)
 
 
-    ![](images/image-3.png)
+   ![](images/image-3.png)
 
 Note:
 
@@ -62,3 +62,8 @@ You can now play with your Launchpad-X. The behavior will be the same as for MK2
 The "Native" radio button can be used to make the Lauchpad-X going back to power-on status, and send MIDI messages in "Note mode" or "Custom mode". MIDI messages will be received by FL-Studio on port 3 for our configuration example. When you are in native mode, you can no longer use the performance mode.
 
 Enjoy!
+
+## Compiling
+To build from source you need [Gradle](https://gradle.org/). Once you have gradle installed
+simply run `gradle wrapper` to obtain the correct version of Gradle, then `./gradlew build`
+to build the project.
