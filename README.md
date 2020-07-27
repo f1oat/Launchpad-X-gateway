@@ -64,6 +64,5 @@ The "Native" radio button can be used to make the Lauchpad-X going back to power
 Enjoy!
 
 ## Compiling
-To build from source you need [Gradle](https://gradle.org/). Once you have gradle installed
-simply run `gradle wrapper` to obtain the correct version of Gradle, then `./gradlew build`
-to build the project.
+To build from source simply run `./gradlew runShadow`. This will build and run the program.
+The runnable jar file will be at `build/libs/Launchpad-X-gateway-all.jar`.
