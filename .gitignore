@@ -6,10 +6,7 @@
 .idea/
 
 # Ignore Gradle wrapper and Gradle cache directory
-.gradle
-gradle/
-gradlew
-gradlew.bat
+.gradle/
 
 # Ignore Gradle build output directory
 build
