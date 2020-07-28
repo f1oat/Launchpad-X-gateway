@@ -23,7 +23,7 @@ Then, setup three Virtual MIDI ports as below:
 
 Connect your Launchpad-X.
 
-Then you need to install and run the Java application: [https://github.com/f1oat/Launchpad-X-gateway/raw/master/target/Launchpad-X-gateway-1.0-SNAPSHOT.jar](https://github.com/f1oat/Launchpad-X-gateway/raw/master/target/Launchpad-X-gateway-1.0-SNAPSHOT.jar)
+Then you need to install and run the Java application: [https://github.com/f1oat/Launchpad-X-gateway/releases](https://github.com/f1oat/Launchpad-X-gateway/releases)
 
 Configure it as below:
 
